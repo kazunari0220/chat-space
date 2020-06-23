@@ -24,7 +24,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|title|text|null: false|
+|name|string|null: false|
 ### Association
 - has_many :users, through: :users_groups
 - has_many :tweets
