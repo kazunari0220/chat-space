@@ -1,2 +1,14 @@
-＜サイドバー＞
+-# ＜サイドバー＞
 .side-bar
+  .user-name
+    .user-name__top-items
+      .user-name__top-items__name masa
+      .user-name__top-items__icons
+        = link_to "#", class: "user-name__top-items__icons__btn" do
+          = icon('fas', 'edit')
+        = link_to "#", class: "user-name__top-items__icons__btn" do
+          = icon('fas', 'cog')
+  .group-list
+    .group-list__group
+      .group-list__group__group-name techcamp
+      .group-list__group__group-message まだメッセージがありません
