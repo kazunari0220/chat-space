@@ -18,7 +18,7 @@
     = render @messages
 
   .main-chat__footer
-    = form_with model: [@group, @message], local: true do |f|
+    = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .new-message
         .input-box
           = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
