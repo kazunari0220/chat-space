@@ -1,4 +1,5 @@
 .main-chat__message-field__message-box
+.MessageBox{data: {message: {id: message.id}}}
   .main-chat__message-field__message-box__message-info
     .main-chat__message-field__message-box__message-info__user-name
       = message.user.name
@@ -10,15 +11,3 @@
       %p.Message__content
         = message.content
     = image_tag message.image.url, class: 'Message__image' if message.image.present?
-
-
-
-    -# .main-chat__message-field__message-box
-    -#   .main-chat__message-field__message-box__message-info
-    -#     .main-chat__message-field__message-box__message-info__user-name
-    -#       masa
-    -#     .main-chat__message-field__message-box__message-info__date
-    -#       2019/11/20(Wed) 17:43:01
-    -#   .main-chat__message-field__message-box__message
-    -#     .main-chat__message-field__message-box__message__content
-    -#       おはよう
